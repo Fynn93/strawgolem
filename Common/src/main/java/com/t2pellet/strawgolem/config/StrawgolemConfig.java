@@ -147,9 +147,9 @@ public class StrawgolemConfig extends Config {
     @Section("Health")
     public static class Health {
         @Section.Comment("Golem lifespan in ticks. Set to -1 for infinite")
-        private static int lifespan = 168000;
+        private static int lifespan = -1;
         @Section.Comment("Golem hunger in ticks. Set to -1 for infinite")
-        private static int hunger = 48000;
+        private static int hunger = -1;
         @Section.Comment("Enables lifespan penalty in the rain (-1 extra / tick)")
         private static boolean rainPenalty = true;
         @Section.Comment("Enables lifespan penalty in water (-1 extra / tick)")
